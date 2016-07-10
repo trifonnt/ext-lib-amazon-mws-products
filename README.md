@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/trifonnt/ext-lib-amazon-mws-products.png?branch=master)](https://travis-ci.org/trifonnt/ext-lib-amazon-mws-products)
-
 [![](https://jitpack.io/v/trifonnt/ext-lib-amazon-mws-products.svg)](https://jitpack.io/#trifonnt/ext-lib-amazon-mws-products)
 
 
