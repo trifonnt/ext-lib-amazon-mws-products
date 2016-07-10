@@ -11,7 +11,7 @@ https://developer.amazonservices.com/doc/products/products/v20111001/java.html
 
 http://docs.developer.amazonservices.com/en_US/products/index.html
 
-Current CI status: https://travis-ci.org/trifonnt/amazon-mws-products
+Current CI status: https://travis-ci.org/trifonnt/ext-lib-amazon-mws-products
 
 
 About this Library
