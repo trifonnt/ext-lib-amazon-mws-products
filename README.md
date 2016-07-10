@@ -1,0 +1,113 @@
+[![Build Status](https://travis-ci.org/trifonnt/ext-lib-amazon-mws-products.png?branch=master)](https://travis-ci.org/trifonnt/ext-lib-amazon-mws-products)
+
+[![](https://jitpack.io/v/trifonnt/ext-lib-amazon-mws-products.svg)](https://jitpack.io/#trifonnt/ext-lib-amazon-mws-products)
+
+
+Amazon MWS(Marketplace Web Service) Products Java Library - Version 2011-10-01.V269521071
+=============================================================================== 
+The project is mavenised unofficial copy of Java library provided by 
+Amazon for dealing with Amazon Marketplace Web Service API.
+
+https://developer.amazonservices.com/doc/products/products/v20111001/java.html
+
+http://docs.developer.amazonservices.com/en_US/products/index.html
+
+Current CI status: https://travis-ci.org/trifonnt/amazon-mws-products
+
+
+About this Library
+=============================================================================== 
+
+Based on the 2011-10-01 API version.
+Refers only to the [MWSProductsJavaClientLibrary-2011-10-01.zip](https://images-na.ssl-images-amazon.com/images/G/01/mwsportal/clientlib/Products/2011-10-01/MWSProductsJavaClientLibrary-2011-10-01._V269521071_.zip) file.
+
+
+Prerequisites
+=============================================================================== 
+
+- Amazon Pro Merchant seller account or another Amazon account that makes you eligible to use Amazon Marketplace Web Service (Amazon MWS). For more information, see the [Amazon MWS FAQ](https://developer.amazonservices.com/gp/mws/faq.html).
+
+- Registering for Amazon MWS. For more information see the [Amazon MWS FAQ](https://developer.amazonservices.com/gp/mws/faq.html).
+
+- Java Platform Standard Edition 6.0 Development Kit (JDK 1.6.0_19) or newer. If your version of the JDK is older than 6.0, you must install the newer version. For more information, go to the Java SE Downloads page. 
+
+
+Building when migrating to new Amazon MWS Products library version
+===============================================================================
+
+Only if project is created from scratch
+```shell
+$ mvn archetype:create \
+ -DarchetypeGroupId=org.apache.maven.archetypes \
+ -DgroupId=com.github.trifonnt \
+ -DartifactId=ext-lib-amazon-mws-products \
+ -DpackageName=com.amazonservices.mws.products
+```
+
+```shell
+$ git clone https://github.com/trifonnt/ext-lib-amazon-mws-products.git
+
+$ cd ext-lib-amazon-mws-products
+
+$ mkdir orig-library
+
+$ cd orig-library
+
+$ wget https://images-na.ssl-images-amazon.com/images/G/01/mwsportal/clientlib/Products/2011-10-01/MWSProductsJavaClientLibrary-2011-10-01._V269521071_.zip
+
+$ unzip MWSProductsJavaClientLibrary-2011-10-01._V269521071_.zip
+
+
+$ mv LICENSE.txt  ../
+
+$ mkdir ../src/test/resources/
+$ mv src/com/amazonservices/mws/products/mock/*.xml ../src/test/resources/
+$ mkdir ../src/test/java/com/amazonservices/mws/products/mock/
+$ mv src/com/amazonservices/mws/products/mock/MarketplaceWebServiceProductsMock.java ../src/test/java/com/amazonservices/mws/products/mock/
+$ rm -r src/com/amazonservices/mws/products/mock
+
+$ mkdir ../src/test/java/com/amazonservices/mws/products/samples/
+$ mv src/com/amazonservices/mws/products/samples/*.java ../src/test/java/com/amazonservices/mws/products/samples/
+$ rm -r src/com/amazonservices/mws/products/samples
+
+$ mv src/com/amazonservices/mws/products/*.java ../src/main/java/com/amazonservices/mws/products/
+$ mkdir ../src/main/java/com/amazonservices/mws/products/model/
+$ mv src/com/amazonservices/mws/products/model/*.java ../src/main/java/com/amazonservices/mws/products/model
+$ rm -r src/com/amazonservices/mws/products/model
+
+$ mkdir ../src/main/java/com/amazonservices/mws/client
+$ mv runtime-src/com/amazonservices/mws/client/*.java ../src/main/java/com/amazonservices/mws/client
+
+
+$ mvn clean install -Dmaven.javadoc.skip=true
+
+```
+
+
+Publishing to JitPack
+===============================================================================
+
+ - Create new Release in GitHub
+
+
+ - Open below URL in order to start JitPack build process
+
+```shell
+https://jitpack.io/com/github/trifonnt/ext-lib-amazon-mws-products/1.0.0-alpha.2
+```
+
+
+Licensing
+=============================================================================== 
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
