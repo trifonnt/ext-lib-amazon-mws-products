@@ -74,9 +74,6 @@ $ mkdir ../src/main/java/com/amazonservices/mws/products/model/
 $ mv src/com/amazonservices/mws/products/model/*.java ../src/main/java/com/amazonservices/mws/products/model
 $ rm -r src/com/amazonservices/mws/products/model
 
-$ mkdir ../src/main/java/com/amazonservices/mws/client
-$ mv runtime-src/com/amazonservices/mws/client/*.java ../src/main/java/com/amazonservices/mws/client
-
 
 $ mvn clean install -Dmaven.javadoc.skip=true
 
