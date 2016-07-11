@@ -26,7 +26,7 @@ limitations under the License.
 
 	<groupId>com.github.trifonnt</groupId>
 	<artifactId>ext-lib-amazon-mws-products</artifactId>
-	<version>1.0.0-alpha.2</version>
+	<version>1.0.0-alpha.3</version>
 	<packaging>jar</packaging>
 	<name>Amazon MWS :: Products</name>
 	<description>Amazon MWS Products API Client Library</description>
@@ -81,6 +81,7 @@ limitations under the License.
 		<jdk.version>1.6</jdk.version>
 		<compiler.fork>1.6</compiler.fork>
 
+		<amazon-mws-client-runtime-version>1.0.0</amazon-mws-client-runtime-version>
 		<maven-bundle-version>2.3.7</maven-bundle-version>
 		<commons-codec-version>1.6</commons-codec-version>
 		<commons-logging-version>1.1</commons-logging-version>
@@ -99,6 +100,12 @@ limitations under the License.
 	</distributionManagement>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.github.trifonnt</groupId>
+			<artifactId>ext-lib-amazon-mws-client-runtime</artifactId>
+			<version>${amazon-mws-client-runtime-version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
@@ -256,6 +263,15 @@ limitations under the License.
 
 		</plugins>
 	</build>
+
+
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
 	<profiles>
 		<profile>
 			<id>release-sign-artifacts</id>

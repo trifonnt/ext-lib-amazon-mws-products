@@ -92,7 +92,7 @@ Publishing to JitPack
  - Open below URL in order to start JitPack build process
 
 ```shell
-https://jitpack.io/com/github/trifonnt/ext-lib-amazon-mws-products/1.0.0-alpha.2
+https://jitpack.io/com/github/trifonnt/ext-lib-amazon-mws-products/1.0.0-alpha.3
 ```
 
 
