@@ -21,14 +21,16 @@ package com.amazonservices.mws.products.model;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="ServiceStatusEnum">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="GREEN"/>
- *     &lt;enumeration value="GREEN_I"/>
- *     &lt;enumeration value="YELLOW"/>
- *     &lt;enumeration value="RED"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * {@code
+ * <simpleType name="ServiceStatusEnum">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="GREEN"/>
+ *     <enumeration value="GREEN_I"/>
+ *     <enumeration value="YELLOW"/>
+ *     <enumeration value="RED"/>
+ *   </restriction>
+ * </simpleType>
+ * }
  * </pre>
  * 
  */
@@ -46,7 +48,4 @@ public enum ServiceStatusEnum {
     public static ServiceStatusEnum fromValue(String v) {
         return valueOf(v);
     }
-
 }
-
-    
