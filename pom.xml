@@ -14,7 +14,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<!--parent>
@@ -54,8 +56,8 @@ limitations under the License.
 		<mockito-version>1.9.5</mockito-version>
 		<junit-version>4.11</junit-version>
 
-		<github-user>trifont</github-user>
-		<github-repo>ext-lib-amazon-mws-products</github-repo>
+		<github.user>trifont</github.user>
+		<github.repo>ext-lib-amazon-mws-products</github.repo>
 
 		<bintray.user>trifonnt</bintray.user>
 		<bintray.repo>maven2</bintray.repo>
@@ -96,19 +98,19 @@ limitations under the License.
 	<scm>
 		<connection>scm:git:git@github.com:trifonnt/ext-lib-amazon-mws-products.git</connection>
 		<developerConnection>scm:git:git@github.com:trifonnt/ext-lib-amazon-mws-products.git</developerConnection>
-		<url>https://github.com/trifonnt/${github-repo}/tree/master</url>
+		<url>https://github.com/trifonnt/${github.repo}/tree/master</url>
 		<tag>1.0.0-alpha.5</tag>
 	</scm>
 	<!--scm>
-		<connection>scm:git:git@github.com:${github-user}/${github-repo}.git</connection>
-		<developerConnection>scm:git:ssh@github.com:${github-user}/${github-repo}.git</developerConnection>
-		<url>https://github.com/${github-user}/${github-repo}/tree/master</url>
+		<connection>scm:git:git@github.com:${github.user}/${github.repo}.git</connection>
+		<developerConnection>scm:git:ssh@github.com:${github.user}/${github.repo}.git</developerConnection>
+		<url>https://github.com/${github.user}/${github.repo}/tree/master</url>
 		<tag>HEAD</tag>
 	</scm-->
 	<!--scm>
-		<connection>scm:git:https://github.com/${github-user}/${github-repo}.git</connection>
-		<developerConnection>scm:git:git@github.com:${github-user}/${github-repo}.git</developerConnection>
-		<url>https://github.com/${github-user}/${github-repo}</url>
+		<connection>scm:git:https://github.com/${github.user}/${github.repo}.git</connection>
+		<developerConnection>scm:git:git@github.com:${github.user}/${github.repo}.git</developerConnection>
+		<url>https://github.com/${github.user}/${github.repo}</url>
 		<tag>HEAD</tag>
 	</scm-->
 

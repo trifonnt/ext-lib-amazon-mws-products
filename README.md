@@ -76,7 +76,20 @@ $ rm -r src/com/amazonservices/mws/products/model
 
 
 $ mvn clean install -Dmaven.javadoc.skip=true
+```
 
+Publishing to Bintray
+===============================================================================
+
+ [Publishing releases using Github, Bintray and maven-release-plugin](http://veithen.github.io/2013/05/26/github-bintray-maven-release-plugin.html)
+
+ [Publishing Your Maven Project to Bintray](https://blog.bintray.com/2015/09/17/publishing-your-maven-project-to-bintray/)
+
+```shell
+$ mvn clean install -Prelease -Dmaven.javadoc.skip=true
+
+$ mvn versions:set
+$ mvn deploy
 ```
 
 
