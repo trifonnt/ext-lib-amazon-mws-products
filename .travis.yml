@@ -1,1 +1,16 @@
 language: java
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.email "travis@travis-ci.org"
+  - git config --local user.name "Travis CI"
+#  - git tag "$(date +'%Y.%m.%d-%H_%M')-$(git log --format=%h -1)"
+deploy:
+  provider: releases
+  api_key: $GITHUB_API_KEY
+  file_glob: true
+  file: target/ext-lib-amazon-mws-products*
+  skip_cleanup: true
+  on:
+#   repo: trifonnt/ext-lib-amazon-mws-products
+    tags: true
+    all_branches: true
