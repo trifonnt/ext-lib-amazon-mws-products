@@ -4,14 +4,14 @@
 
 Amazon MWS(Marketplace Web Service) Products Java Library - Version 2011-10-01.V269521071
 =============================================================================== 
-The project is mavenised unofficial copy of Java library provided by 
-Amazon for dealing with Amazon Marketplace Web Service API.
+The project is mavenised unofficial copy of Java library provided by Amazon for dealing with Amazon Marketplace Web Service API.
 
-https://developer.amazonservices.com/doc/products/products/v20111001/java.html
+ - https://developer.amazonservices.com/doc/products/products/v20111001/java.html
 
-http://docs.developer.amazonservices.com/en_US/products/index.html
+ - https://docs.developer.amazonservices.com/en_US/products/index.html
 
 Current CI status: https://travis-ci.org/trifonnt/ext-lib-amazon-mws-products
+
 
 
 About this Library
@@ -31,10 +31,9 @@ Prerequisites
 - Java Platform Standard Edition 6.0 Development Kit (JDK 1.6.0_19) or newer. If your version of the JDK is older than 6.0, you must install the newer version. For more information, go to the Java SE Downloads page. 
 
 
-Building when migrating to new Amazon MWS Products library version
-===============================================================================
+## How to
 
-Only if project is created from scratch
+## Create this project from scratch
 ```shell
 $ mvn archetype:create \
  -DarchetypeGroupId=org.apache.maven.archetypes \
@@ -43,6 +42,7 @@ $ mvn archetype:create \
  -DpackageName=com.amazonservices.mws.products
 ```
 
+### Migrate to new version of Amazon MWS Products library
 ```shell
 $ git clone https://github.com/trifonnt/ext-lib-amazon-mws-products.git
 
@@ -78,8 +78,7 @@ $ rm -r src/com/amazonservices/mws/products/model
 $ mvn clean install -Dmaven.javadoc.skip=true
 ```
 
-Publishing to Bintray
-===============================================================================
+### Publish new version to Bintray
 
  [Publishing releases using Github, Bintray and maven-release-plugin](http://veithen.github.io/2013/05/26/github-bintray-maven-release-plugin.html)
 
@@ -92,12 +91,9 @@ $ mvn versions:set
 $ mvn deploy
 ```
 
-
-Publishing to JitPack
-===============================================================================
+### Publish new version to JitPack
 
  - Create new Release in GitHub
-
 
  - Open below URL in order to start JitPack build process
 
@@ -105,6 +101,24 @@ Publishing to JitPack
 https://jitpack.io/com/github/trifonnt/ext-lib-amazon-mws-products/1.0.0-alpha.4
 ```
 
+### Get this project into your Maven build(pom.xml)
+```xml
+...
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+ ...
+ ...
+ 	<dependency>
+	    <groupId>com.github.trifonnt</groupId>
+	    <artifactId>ext-lib-amazon-mws-products</artifactId>
+	    <version>1.0.0-alpha.4</version>
+	</dependency>
+...
+```
 
 Licensing
 =============================================================================== 
