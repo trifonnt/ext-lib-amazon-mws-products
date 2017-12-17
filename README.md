@@ -33,7 +33,7 @@ Prerequisites
 
 ## How to
 
-## Create this project from scratch
+### Create this project from scratch
 ```shell
 $ mvn archetype:create \
  -DarchetypeGroupId=org.apache.maven.archetypes \
