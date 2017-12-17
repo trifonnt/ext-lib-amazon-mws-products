@@ -60,8 +60,8 @@ $ unzip MWSProductsJavaClientLibrary-2011-10-01._V269521071_.zip
 $ mv LICENSE.txt  ../
 
 $ mkdir ../src/test/resources/
+$ mkdir ../src/test/java/com/amazonservices/mws/products/mock/ -p
 $ mv src/com/amazonservices/mws/products/mock/*.xml ../src/test/resources/
-$ mkdir ../src/test/java/com/amazonservices/mws/products/mock/
 $ mv src/com/amazonservices/mws/products/mock/MarketplaceWebServiceProductsMock.java ../src/test/java/com/amazonservices/mws/products/mock/
 $ rm -r src/com/amazonservices/mws/products/mock
 
@@ -69,8 +69,8 @@ $ mkdir ../src/test/java/com/amazonservices/mws/products/samples/
 $ mv src/com/amazonservices/mws/products/samples/*.java ../src/test/java/com/amazonservices/mws/products/samples/
 $ rm -r src/com/amazonservices/mws/products/samples
 
-$ mv src/com/amazonservices/mws/products/*.java ../src/main/java/com/amazonservices/mws/products/
 $ mkdir ../src/main/java/com/amazonservices/mws/products/model/
+$ mv src/com/amazonservices/mws/products/*.java ../src/main/java/com/amazonservices/mws/products/
 $ mv src/com/amazonservices/mws/products/model/*.java ../src/main/java/com/amazonservices/mws/products/model
 $ rm -r src/com/amazonservices/mws/products/model
 
